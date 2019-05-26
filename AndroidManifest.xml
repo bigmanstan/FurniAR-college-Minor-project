@@ -12,7 +12,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <meta-data android:name="com.google.android.ar.API_KEY" android:value="  ENTER YOUR KEY HERE"/>
+        <meta-data android:name="com.google.android.ar.API_KEY" android:value="  ENTER YOUR KEY HERE "/>
         <meta-data android:name="com.google.ar.core" android:value="required"/>
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
         <activity android:name="edu.wpi.jlyu.sceneformfurniture.MainActivity"/>
