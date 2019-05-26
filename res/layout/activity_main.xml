@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="parent" app:layout_constraintTop_toTopOf="@id/sceneform_fragment" app:layout_constraintVertical_chainStyle="spread" app:layout_constraintVertical_weight="1.0">
+        <Button android:id="@id/clear_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Clear" />
+        <Button android:id="@id/resolve_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Resolve" />
+    </LinearLayout>
+    <fragment android:name="edu.wpi.jlyu.sceneformfurniture.CustomArFragment" android:id="@id/sceneform_fragment" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/gallery_layout" app:layout_constraintTop_toBottomOf="@id/button_layout" app:layout_constraintVertical_chainStyle="spread" app:layout_constraintVertical_weight="8.0" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/gallery_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/sceneform_fragment" app:layout_constraintVertical_chainStyle="spread" app:layout_constraintVertical_weight="1.0" />
+    <io.github.yavski.fabspeeddial.FabSpeedDial android:gravity="end|bottom|center" android:id="@id/fabID" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fabGravity="bottom_end" app:fabMenu="@menu/main_menu" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:miniFabBackgroundTint="@android:color/white" app:miniFabDrawableTint="?colorPrimaryDark" />
+</android.support.constraint.ConstraintLayout>

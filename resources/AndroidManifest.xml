@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="edu.wpi.jlyu.sceneformfurniture" platformBuildVersionCode="1" platformBuildVersionName="1">
+    <uses-sdk android:minSdkVersion="27" android:targetSdkVersion="27"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera.ar" android:required="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:theme="@style/AppTheme" android:label="FurnitAR" android:icon="@mipmap/ic_launcher" android:debuggable="true" android:allowBackup="true" android:supportsRtl="true" android:roundIcon="@mipmap/ic_launcher_round">
+        <activity android:name="edu.wpi.jlyu.sceneformfurniture.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.ar.API_KEY" android:value="AIzaSyCgkfTmfPGaLJ6VDbI_Yzh-J3yLFIWuXFg"/>
+        <meta-data android:name="com.google.ar.core" android:value="required"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name="edu.wpi.jlyu.sceneformfurniture.MainActivity"/>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="edu.wpi.jlyu.sceneformfurniture.firebaseinitprovider" android:initOrder="100"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:theme="@android:style/Theme.Material.Light.Dialog.Alert" android:name="com.google.ar.core.InstallActivity" android:exported="false" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <meta-data android:name="com.google.ar.core.min_apk_version" android:value="180626000"/>
+    </application>
+</manifest>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_addcart" android:id="@id/addtocart" android:title="Add To Cart" />
+    <item android:icon="@drawable/ic_share" android:id="@id/share" android:title="Share" />
+</menu>

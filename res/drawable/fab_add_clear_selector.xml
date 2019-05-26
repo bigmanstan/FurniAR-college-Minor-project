@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:id="@id/pressed_state" android:drawable="@drawable/ic_add_black_48dp_09" />
+    <item android:id="@id/default_state" android:drawable="@drawable/ic_add_black_48dp_00" />
+    <transition android:toId="@id/pressed_state" android:fromId="@id/default_state">
+        <animation-list>
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_00" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_01" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_02" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_03" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_04" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_05" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_06" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_07" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_08" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_09" />
+        </animation-list>
+    </transition>
+    <transition android:toId="@id/default_state" android:fromId="@id/pressed_state">
+        <animation-list>
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_09" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_08" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_07" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_06" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_05" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_04" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_03" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_02" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_01" />
+            <item android:duration="15" android:drawable="@drawable/ic_add_black_48dp_00" />
+        </animation-list>
+    </transition>
+</animated-selector>
