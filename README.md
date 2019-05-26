@@ -6,5 +6,5 @@
 
 4.)currently only runs on Android 9.
 
-5) if you are not able to compile the apk , you can message me.
+5)if you are not able to compile the apk , you can message me.
 
